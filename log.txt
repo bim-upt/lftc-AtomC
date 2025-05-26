@@ -1,0 +1,296 @@
+Tokens:
+
+2	TYPE_INT
+2	ID: fact
+2	LPAR
+2	TYPE_INT
+2	ID: n
+2	RPAR
+2	LACC
+3	IF
+3	LPAR
+3	ID: n
+3	LESS
+3	INT: 3
+3	RPAR
+3	RETURN
+3	ID: n
+3	SEMICOLON
+4	RETURN
+4	ID: n
+4	MUL
+4	ID: fact
+4	LPAR
+4	ID: n
+4	SUB
+4	INT: 1
+4	RPAR
+4	SEMICOLON
+5	RACC
+7	VOID
+7	ID: main
+7	LPAR
+7	RPAR
+7	LACC
+8	ID: put_i
+8	LPAR
+8	DOUBLE: 4.900000
+8	RPAR
+8	SEMICOLON
+10	ID: put_i
+10	LPAR
+10	ID: fact
+10	LPAR
+10	INT: 3
+10	RPAR
+10	RPAR
+10	SEMICOLON
+13	TYPE_INT
+13	ID: r
+13	SEMICOLON
+14	ID: r
+14	ASSIGN
+14	INT: 1
+14	SEMICOLON
+15	TYPE_INT
+15	ID: i
+15	SEMICOLON
+16	ID: i
+16	ASSIGN
+16	INT: 2
+16	SEMICOLON
+17	WHILE
+17	LPAR
+17	ID: i
+17	LESS
+17	INT: 5
+17	RPAR
+17	LACC
+18	ID: r
+18	ASSIGN
+18	ID: r
+18	MUL
+18	ID: i
+18	SEMICOLON
+19	ID: i
+19	ASSIGN
+19	ID: i
+19	ADD
+19	INT: 1
+19	SEMICOLON
+20	RACC
+21	ID: put_i
+21	LPAR
+21	ID: r
+21	RPAR
+21	SEMICOLON
+22	RACC
+23	END
+
+---------------------------------------
+Consumed tokens
+---------------------------------------
+2	TYPE_INT          typeBase <- fnDef <- unit <- 
+2	ID: fact          fnDef <- unit <- 
+2	LPAR              fnDef <- unit <- 
+2	TYPE_INT          typeBase <- fnParam <- fnDef <- unit <- 
+2	ID: n             fnParam <- fnDef <- unit <- 
+2	RPAR              fnDef <- unit <- 
+2	LACC              stmCompound <- fnDef <- unit <- 
+3	IF                stm <- stmCompound <- fnDef <- unit <- 
+3	LPAR              stm <- stmCompound <- fnDef <- unit <- 
+3	ID: n             exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:3	ID: n             exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+3	ID: n             exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+3	LESS              exprRelPrim <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+3	INT: 3            exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRelPrim <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+3	RPAR              stm <- stmCompound <- fnDef <- unit <- 
+3	RETURN            stm <- stm <- stmCompound <- fnDef <- unit <- 
+3	ID: n             exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:3	ID: n             exprAssign <- expr <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+
+3	ID: n             exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+3	SEMICOLON         stm <- stm <- stmCompound <- fnDef <- unit <- 
+4	RETURN            stm <- stmCompound <- fnDef <- unit <- 
+4	ID: n             exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:4	ID: n             exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+4	ID: n             exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+4	MUL               exprMulPrim <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+4	ID: fact          exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMulPrim <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+4	LPAR              exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMulPrim <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+4	ID: n             exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMulPrim <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:4	ID: n             exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMulPrim <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+4	ID: n             exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMulPrim <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+4	SUB               exprAddPrim <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMulPrim <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+4	INT: 1            exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAddPrim <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMulPrim <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+4	RPAR              exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMulPrim <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+4	SEMICOLON         stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:4	SEMICOLON         stm <- stmCompound <- fnDef <- unit <- 
+
+5	RACC              stmCompound <- fnDef <- unit <- 
+7	VOID              fnDef <- unit <- 
+7	ID: main          fnDef <- unit <- 
+7	LPAR              fnDef <- unit <- 
+7	RPAR              fnDef <- unit <- 
+7	LACC              stmCompound <- fnDef <- unit <- 
+8	ID: put_i         exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+8	LPAR              exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+8	DOUBLE: 4.900000  exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:8	DOUBLE: 4.900000  exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+8	DOUBLE: 4.900000  exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+8	RPAR              exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:8	RPAR              exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+8	ID: put_i         exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+8	LPAR              exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+8	DOUBLE: 4.900000  exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:8	DOUBLE: 4.900000  exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+8	DOUBLE: 4.900000  exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+8	RPAR              exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+8	SEMICOLON         stm <- stmCompound <- fnDef <- unit <- 
+10	ID: put_i        exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	LPAR             exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	ID: fact         exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	LPAR             exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	INT: 3           exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:10	INT: 3           exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+10	INT: 3           exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	RPAR             exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:10	RPAR             exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+10	ID: fact         exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	LPAR             exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	INT: 3           exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:10	INT: 3           exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+10	INT: 3           exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	RPAR             exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	RPAR             exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:10	RPAR             exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+10	ID: put_i        exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	LPAR             exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	ID: fact         exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	LPAR             exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	INT: 3           exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:10	INT: 3           exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+10	INT: 3           exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	RPAR             exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:10	RPAR             exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+10	ID: fact         exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	LPAR             exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	INT: 3           exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:10	INT: 3           exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+10	INT: 3           exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	RPAR             exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	RPAR             exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+10	SEMICOLON        stm <- stmCompound <- fnDef <- unit <- 
+13	TYPE_INT         typeBase <- varDef <- stmCompound <- fnDef <- unit <- 
+13	ID: r            varDef <- stmCompound <- fnDef <- unit <- 
+13	SEMICOLON        varDef <- stmCompound <- fnDef <- unit <- 
+14	ID: r            exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+14	ASSIGN           exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+14	INT: 1           exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:14	INT: 1           exprAssign <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+14	INT: 1           exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+14	SEMICOLON        stm <- stmCompound <- fnDef <- unit <- 
+15	TYPE_INT         typeBase <- varDef <- stmCompound <- fnDef <- unit <- 
+15	ID: i            varDef <- stmCompound <- fnDef <- unit <- 
+15	SEMICOLON        varDef <- stmCompound <- fnDef <- unit <- 
+16	ID: i            exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+16	ASSIGN           exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+16	INT: 2           exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:16	INT: 2           exprAssign <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+16	INT: 2           exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+16	SEMICOLON        stm <- stmCompound <- fnDef <- unit <- 
+17	WHILE            stm <- stmCompound <- fnDef <- unit <- 
+17	LPAR             stm <- stmCompound <- fnDef <- unit <- 
+17	ID: i            exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:17	ID: i            exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+17	ID: i            exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+17	LESS             exprRelPrim <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+17	INT: 5           exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRelPrim <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+17	RPAR             stm <- stmCompound <- fnDef <- unit <- 
+17	LACC             stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+18	ID: r            exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+18	ASSIGN           exprAssign <- expr <- stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+18	ID: r            exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- exprAssign <- expr <- stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:18	ID: r            exprAssign <- exprAssign <- expr <- stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+
+18	ID: r            exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- exprAssign <- expr <- stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+18	MUL              exprMulPrim <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- exprAssign <- expr <- stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+18	ID: i            exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMulPrim <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- exprAssign <- expr <- stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+18	SEMICOLON        stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+19	ID: i            exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+19	ASSIGN           exprAssign <- expr <- stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+19	ID: i            exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- exprAssign <- expr <- stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:19	ID: i            exprAssign <- exprAssign <- expr <- stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+
+19	ID: i            exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- exprAssign <- expr <- stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+19	ADD              exprAddPrim <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- exprAssign <- expr <- stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+19	INT: 1           exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAddPrim <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- exprAssign <- expr <- stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+19	SEMICOLON        stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:19	SEMICOLON        stm <- stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+
+20	RACC             stmCompound <- stm <- stm <- stmCompound <- fnDef <- unit <- 
+21	ID: put_i        exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+21	LPAR             exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+21	ID: r            exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:21	ID: r            exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+21	ID: r            exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+21	RPAR             exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:21	RPAR             exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+21	ID: put_i        exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+21	LPAR             exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+21	ID: r            exprPrimary <- exprPostfix <- exprUnary <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:21	ID: r            exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+
+21	ID: r            exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+21	RPAR             exprPrimary <- exprPostfix <- exprUnary <- exprCast <- exprMul <- exprAdd <- exprRel <- exprEq <- exprAnd <- exprOr <- exprAssign <- expr <- stm <- stmCompound <- fnDef <- unit <- 
+21	SEMICOLON        stm <- stmCompound <- fnDef <- unit <- 
+
+RESTORED to:21	SEMICOLON        stm <- stmCompound <- fnDef <- unit <- 
+
+22	RACC             stmCompound <- fnDef <- unit <- 
+
+RESTORED to:22	RACC             fnDef <- unit <- 
+
+23	END              unit <- 

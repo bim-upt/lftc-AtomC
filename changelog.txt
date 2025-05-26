@@ -1,0 +1,47 @@
+S3
+lexer.c -> tokenize: completed (hopefully) the single and double character lexer regex and the keyword regex (WHILE, IF, etc.)
+
+s4
+lexer.c -> tokenize: done (hopefully)
+parser.c -> arrayDecl: created
+
+s5
+parser.c -> fnDef, stm, stmCompound, fnParam, varDef: created
+            arrayDecl: added error messages
+
+s6
+parser.c ->  exprUnary: created
+
+s7
+parser.c -> exprCast: created
+            exprAssign: created
+
+s8
+parser.c -> structDef: created
+
+s9
+parser.c -> exprPrimary: created
+
+s10
+parser.c -> done (maybe), removed lookAhead in preparation for domain analysis
+lexer.c -> getTokenName: created
+            getTokenString:created
+lexer.h -> getTokenName: added signature
+            getTokenString: added signature
+
+s11
+parser.c -> domain analysis done, hopefully! type analysis done, hopefully!
+
+s12
+vm.h -> added in enum OP CODE for double
+        added signature for 
+        
+vm.c -> created genTestProgram2
+        changed switch to add support for double operations
+        added pushf, popf, put_d
+
+vmProgram.c -> wrote assembly for the given function
+
+s13
+vm.c -> merged with the version provided on CV
+vm.h -> merged with the version provided on CV
